@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1584205420 source:e:\sem3\oclab\operater_overloading\main.cpp
+	<iostream>
+
+1643702297 source:e:\sem3\oclab\operater_overloading\customerdata.cpp
+	<iostream>
+	<string>
+	"PersonData.h"
+
+1643702095 e:\sem3\oclab\operater_overloading\persondata.h
+	<string>
+	<iostream>
+
+1643702259 source:e:\sem3\oclab\operater_overloading\persondata.cpp
+	<iostream>
+	<string>
+	"PersonData.h"
+
