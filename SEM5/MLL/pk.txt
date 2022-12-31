@@ -1,0 +1,222 @@
+PCA
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.express as px
+
+data = np.array([[1000 ,500],[2000, 800],[3000 ,1100],[4000 ,1500],[5000 ,1800],[8000,1900]])
+df = pd.DataFrame(data,columns = ['Salary','Expense'])
+
+fig = px.scatter(df, x="Salary", y="Expense", trendline="ols")
+fig.show()
+
+df
+
+"""<p>Scaling the data</p>"""
+
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+scaled = scaler.fit_transform(data)
+scaled
+
+"""<p>Finding the covariance matrix</p>"""
+
+cov_mat = np.cov(scaled[:,0], scaled[:,1])
+cov_mat
+
+fig = px.imshow(cov_mat, text_auto=True)
+fig.show()
+
+"""So, PCA is a method that:
+
+    Measures how each variable is associated with one another using a Covariance matrix
+    Understands the directions of the spread of our data using Eigenvectors
+    Brings out the relative importance of these directions using Eigenvalues
+
+<p>Finding the eigen values and eigen vectors</p>
+"""
+
+eig_vals, eig_vecs = np.linalg.eig(cov_mat)
+
+
+print(f'Eigen Values: \n{eig_vals}')
+print(f'\nEigen Vectors: \n{eig_vecs}')
+
+"""<p>
+In order to decide which eigenvector(s) can dropped without losing too much information for the construction of lower-dimensional subspace, we need to inspect the corresponding eigenvalues: The eigenvectors with the lowest eigenvalues bear the least information about the distribution of the data; those are the ones can be dropped.
+</p>
+"""
+
+# Make a list of (eigenvalue, eigenvector) tuples
+eig_pairs = [(np.abs(eig_vals[i]), eig_vecs[:,i]) for i in range(len(eig_vals))]
+
+# Sort the (eigenvalue, eigenvector) tuples from high to low
+eig_pairs.sort(key=lambda x: x[0], reverse=True)
+
+# Visually confirm that the list is correctly sorted by decreasing eigenvalues
+print('Eigenvalues in descending order:')
+for i in eig_pairs:
+    print(i[0])
+
+"""<p>Explained Variance After sorting the eigenpairs, the next question is "how many principal components are we going to choose for our new feature subspace?" A useful measure is the so-called "explained variance," which can be calculated from the eigenvalues. The explained variance tells us how much information (variance) can be attributed to each of the principal components.</p>"""
+
+# tot = sum(eig_vals)
+# var_exp = [(i / tot)*100 for i in sorted(eig_vals, reverse=True)]
+# var_exp
+
+sum = 0
+
+for i in eig_vals:
+  sum += i
+
+var_exp = list()
+
+for i in eig_vals:
+  x = i / sum
+  x *= 100
+
+  var_exp.append(x)
+
+print(var_exp)
+
+len(var_exp)
+
+plt.style.use("dark_background")
+plt.figure(figsize=(4,6))
+sns.barplot(x=[1,2],y=var_exp)
+
+eig_pairs
+
+matrix_w = np.hstack((eig_pairs[0][1].reshape(2,1)))
+print('Matrix W:\n', matrix_w)
+
+eig_vecs[0].T
+
+final_data = np.dot(scaled, np.array(matrix_w))
+print(final_data)
+
+from sklearn.decomposition import PCA
+pca = PCA(n_components=1)
+pca.fit(scaled)
+print("Varaince explained by principal component is \n", pca.explained_variance_ratio_)
+print("Final output after PCA \n",pca.transform(scaled)[:,0])
+
+----------------
+KNN
+knn:
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv("/content/sample_data/mnist_train_small.csv")
+
+df.head()
+
+df.rename(columns = {'6':'label'}, inplace = True)
+
+df.head(1)
+
+len(df.columns)
+
+x = [x for x in range(len(df.columns))]
+x[0] = 'Label'
+df.columns = x
+
+df.head()
+
+df[560].value_counts()
+
+X_test = pd.read_csv('/content/sample_data/mnist_test.csv')
+
+X_test.head()
+
+
+
+x = [x for x in range(len(X_test.columns))]
+x[0] = 'Label'
+X_test.columns = x
+
+X_test.head(1)
+
+y_test = X_test.pop('Label')
+
+y_train = df.pop('Label')
+X_train = df.copy()
+
+# X_train = X_train.to_numpy()
+# X_test = X_test.to_numpy()
+# y_train = np.array(y_train)
+# y_test = np.array(y_test)
+
+len(y_test)
+
+len(y_train)
+
+class knn:
+    def _init_(self,X_train,y_train,X_test,y_test,k):
+        self.X_train = X_train        
+        self.X_test = X_test
+        self.y_test = y_test
+        self.y_train = y_train
+        self.k = k
+
+    def dist(self,x,y):
+        if len(x) == len(y):
+            sum = 0
+
+            for i in range(0,len(x),1):
+                sum += (x[i] - y[i]) ** 2
+            return sum ** 0.5
+
+        else:
+            return -1
+
+    def test(self):
+        
+        y_pred = list()
+
+        for index,x_test in self.X_test.iterrows():
+            d = dict()
+
+            if True:
+                for ind,x_train in self.X_train.iterrows():
+                    d[ind] = self.dist(np.array(x_test),np.array(x_train))
+
+                d = {k: v for k, v in sorted(d.items(), key=lambda item: item[1])}
+
+                count = 0
+
+                neighbors = list()
+
+                for i in d:
+                    if count < self.k:
+                        neighbors.append(self.y_train[i])
+
+                    else:
+                        break
+
+                    count += 1
+
+                k_neigh = dict()
+
+                for i in neighbors:
+                    if i not in k_neigh:
+                        k_neigh[i] = 1
+                        continue
+
+                    else:
+                        k_neigh[i] += 1
+
+                k_neigh = {k: v for k, v in sorted(k_neigh.items(), key=lambda item: item[1],reverse=True)}
+                
+
+                for i in k_neigh:
+                    y_pred.append(i)
+                    break
+
+                print(k_neigh)
+                print(neighbors)
+        print(y_pred)
+
+model = knn(X_train,y_train,X_test[:][:10],y_test[:10],5)
+model.test()

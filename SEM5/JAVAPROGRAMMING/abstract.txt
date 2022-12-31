@@ -1,0 +1,132 @@
+
+import java.util.Scanner;
+class Abstract{
+    public static void main(String[] args) {
+        NEFTTransfer net = new NEFTTransfer(1000);
+        System.out.print("Balance: ");
+        System.out.println(net.getBalance());
+        boolean trans = net.Validate();
+        if (trans==true){
+            System.out.print("NEFT Transfer occured succesfully! \n New Balance: ");
+            System.out.print(net.getBalance());
+        }
+        else
+            System.out.print("NEFT Transfer unsuccessful!");
+    }
+}
+
+abstract class FundTransfer
+{
+    private String accountNumber;
+    private double balance;
+
+    FundTransfer()
+    {
+        accountNumber="0000000000";
+        balance=0;
+    }
+
+    FundTransfer(String accountNumber, double balance)
+    {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
+    public boolean Validate(double transferAmount){
+        if(transferAmount>0 && transferAmount<=this.balance && 
+         this.accountNumber.length()==10)
+            return true;
+
+        else
+            return false;
+    }
+
+    abstract boolean Validate();
+
+    public double getBalance()
+    {
+        return balance;
+    }
+
+    public void updateBalance(double amount)
+    {
+        balance = balance - amount;
+    }
+}
+
+class NEFTTransfer extends FundTransfer
+{
+    public double transferAmount;
+    
+    NEFTTransfer(){
+        transferAmount = 0;
+    }
+    
+    NEFTTransfer(double transferAmount){
+        super("Y293SGJ298",500000);
+        this.transferAmount = transferAmount;
+    }
+
+    public boolean Validate(){
+        if (super.Validate(transferAmount)) {
+            if ((transferAmount+0.05*transferAmount) <= super.getBalance())
+                super.updateBalance(transferAmount+0.05*transferAmount);
+            return true;
+        }
+        else
+            return false;
+    }
+
+    public double getBalance(){
+        return super.getBalance();
+    }
+}
+
+class IMPSTransfer extends FundTransfer
+{
+    public double transferAmount;
+
+    IMPSTransfer(){
+        transferAmount = 0;
+    }
+
+    IMPSTransfer(double transferAmount){
+        this.transferAmount = transferAmount;
+    }
+    public boolean Validate(){
+        if (super.Validate(transferAmount)) {
+            if ((transferAmount+0.02*transferAmount)<=super.getBalance())
+                super.updateBalance(transferAmount+0.02*transferAmount);
+            return true;
+        }
+        else
+            return false;
+    }
+}
+
+class RTGSTransfer extends FundTransfer
+{
+    public double transferAmount;
+
+    RTGSTransfer()
+    {
+        transferAmount = 0;
+    }
+
+    RTGSTransfer(double transferAmoun){
+        this.transferAmount = transferAmount;
+    }
+    public boolean Validate()
+    {
+        if (super.Validate(transferAmount)) 
+        {
+            if (transferAmount>10000)
+                super.updateBalance(transferAmount);
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
+    }
+}

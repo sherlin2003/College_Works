@@ -1,0 +1,191 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of users: ");
+        Integer noOfUsers = Integer.parseInt(sc.nextLine());
+        System.out.println("Enter the number of users per thread: ");
+        Integer noOfUsersPerThread = Integer.parseInt(sc.nextLine());
+        System.out.println("Enter the user details: ");
+        List<String> users = new ArrayList<>();
+        List<User> userList = new ArrayList<>();
+        for (int i = 0; i < noOfUsers; i++) {
+            users.add(sc.nextLine());
+        }
+        sc.close();
+        for (String s : users) {
+            userList.add(new User(s.split(",")[0], s.split(",")[1]));
+        }
+        // Adding to the messages
+        try {
+            addMessages(noOfUsers, noOfUsersPerThread, userList);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // Printing the messages
+        System.out.println();
+        for (String msg : UserBO.message) {
+            System.out.println(msg);
+        }
+
+    }
+
+    public synchronized static void addMessages(Integer noOfUsers, Integer noOfUsersPerThread, List<User> userList)
+            throws InterruptedException {
+        for (int i = 0; i < noOfUsers; i += noOfUsersPerThread) {
+            Thread t = new UserBO(userList.subList(i, i + noOfUsersPerThread));
+            t.start();
+            t.join();
+        }
+    }
+}
+
+class User {
+    private String username;
+    private String mobileNumber;
+
+    public User() {
+    }
+
+    public User(String username, String mobileNumber) {
+        this.username = username;
+        this.mobileNumber = mobileNumber;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                '}';
+    }
+}
+
+class UserBO extends Thread {
+    public List<User> userList;
+    public static List<String> message = new ArrayList<>();
+
+    public UserBO(List<User> userList) {
+        this.userList = userList;
+    }
+
+    @Override
+    public void run() {
+        synchronized (this) {
+            for (User u : userList) {
+                message.add("The message is sent to the user " + u.getUsername() + " at the mobile number "
+                        + u.getMobileNumber());
+            }
+        }
+    }
+}
+--------------------------
+import java.lang.*;
+import java.util.*;
+
+public class q1 {
+public static void main(String args[])
+{
+            Scanner sc = new Scanner(System.in);
+            int[] seats = new int[100];
+            System.out.println("Enter the number of seats to be booked :");
+            int total = Integer.parseInt(sc.nextLine());
+            for (int i = 0; i < total; i++) {
+                try {
+                    System.out.println("Enter seat no. " + (i + 1) + ": ");
+                    seats[Integer.parseInt(sc.nextLine())] = 1;
+                    System.out.println("The seat was booked.");
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    System.err.println(e);
+                }
+            }
+        }
+    }
+-------------------
+import java.lang.*;
+import java.util.*;
+
+public class p2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no. of counters: ");
+        Integer noOfCounters = Integer.parseInt(sc.nextLine());
+        ArrayList<String> theList = new ArrayList<>();
+        for(int i = 0; i < noOfCounters; i++) {
+            System.out.print("Enter a string to freqCount: ");
+            theList.add(sc.nextLine());
+        }
+        System.out.println("Displaying the counts: ");
+        for(String s : theList) {
+            new Thread(new FrequencyCounter(s)).start();
+        }
+    }
+}
+
+class FrequencyCounter implements Runnable {
+    public String theString;
+    FrequencyCounter(String s) {
+        this.theString = s;
+    }
+    public void run() {
+        HashMap<Character, Integer> freqMap = new HashMap<>();
+        for (Character c : theString.toCharArray()) {
+            synchronized (this) {
+                if (freqMap.containsKey(c)) {
+                    freqMap.put(c, freqMap.get(c) + 1);
+                }
+                else {
+                    freqMap.put(c, 1);
+                }
+            }
+        }
+        synchronized (this) {
+            String result = "The freqCount of " + this.theString + " is: ";
+            for(Map.Entry entry : freqMap.entrySet()) {
+                result += entry.getKey() + ":" + entry.getValue() + " ";
+            }
+            System.out.println(result);
+        }
+    }
+}
+---------------------
+
+class UserBO {
+    static void validate(User u) throws WeakPasswordException{
+        String pass = new String(u.getPassword());
+        String regex = "^(?=.*[0-9])"
+                + "(?=.*[A-Za-z])"
+                + "(?=.*[@#$%^&+=])"
+                + "(?=\\S+$).{10,20}$";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(pass);
+        if (!m.matches()) {
+            throw new WeakPasswordException("Your password is weak.");
+        }
+    }
+}
+
+class WeakPasswordException extends Exception {
+    public WeakPasswordException(String message) {
+        super(message);
+    }
+}
+---------------------

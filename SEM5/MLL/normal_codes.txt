@@ -1,0 +1,295 @@
+GRAD
+      
+import matplotlib.pyplot as plt
+import numpy as np
+print("Enter the X-values :")  #4 4.5 5 5.5 6 6.5 7
+a=[float(i) for i in input().split()]
+
+print("Enter the Y-values :") #33 42 45 51 53 61 63
+b=[float(i) for i in input().split()]
+
+eta=0.00008
+bold=[0,0]
+bnew=[0,0]
+B0=[]
+B1=[]
+sse1=[]
+sse2=0
+
+while(True):
+    grad=[0,0]
+    
+    for i in range(len(a)):
+        ycap=bold[0]+bold[1]*a[i]
+        grad[0]+=(b[i]-ycap)
+        grad[1]+=(b[i]-ycap)*a[i]
+        sse2+=(b[i]-ycap)**2
+        
+    sse1.append(sse2)
+    B0.append(bold[0])
+    B1.append(bold[1])
+    bnew[0]=bold[0]+eta*(grad[0])
+    bnew[1]=bold[1]+eta*(grad[1])
+    
+    if(bold[0]==bnew[0] and bold[1]==bnew[1]):
+        break
+    
+    bold[0]=bnew[0]
+    bold[1]=bnew[1]
+
+print(bold)
+
+mean=sum(b)/len(a)
+
+sse=sst=0
+
+print("SSE")
+for i in range(len(a)):
+    sse+=(b[i]-(bold[0]+bold[1]*a[i]))**2
+print(sse)
+
+print("SST")
+for i in range(len(a)):
+    sst+=(b[i]-mean)**2
+print(sst)
+
+print("SSR")
+ssr=sst-sse
+print(ssr)
+
+print("Coefficient of determination , r2 : ")
+r=ssr/sst
+print(r)
+
+plt.plot(B0,B1,sse1)
+-----------------------------
+
+LREG
+# Parametric, Discriminative Model
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = pd.read_csv("linear.csv")
+plt.scatter(data['X'],data['Y'])
+
+n = len(data['X'])
+sumX = np.sum(data['X'])
+sumX2 = np.sum(data['X']*data['X'])
+ 
+xtx = [[n, sumX],[sumX, sumX2]]
+xtxinv = np.linalg.inv(xtx)
+
+sumY = np.sum(data['Y'])
+sumXY = np.sum(data['X']*data['Y'])
+xty = [sumY, sumXY]
+b = np.matmul(xtxinv,xty)
+
+print(b)
+
+x = np.linspace(4,7)
+y = b[0] + b[1]*x;
+plt.plot(x,y,'-r')
+plt.grid()
+plt.show()
+
+#SSE
+ynew = []
+for i in data['X']:
+    yval = b[0] + b[1]*i
+    ynew.append(yval)
+
+e = []
+k = 0
+for i in data['Y']:
+    erval = i-ynew[k]
+    e.append(erval*erval)
+    k+=1
+print(sum(e))
+
+
+#SST
+mean = np.mean(data['Y'])
+s = 0
+for i in data['Y']:
+    s += i-mean
+print(s)
+
+#SSR
+e = []
+k = 0
+for i in data['Y']:
+    erval = ynew[k]-mean
+    e.append(erval*erval)
+    k+=1
+print(sum(e))
+
+ ----------------------
+
+MULTIPLE
+
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv("data.csv")
+
+
+def vifCheck(X,Y):
+    n = len(data[X])
+    sumX = np.sum(data[X])
+    sumX2 = np.sum(data[X]*data[X])
+     
+    xtx = [[n, sumX],[sumX, sumX2]]
+    xtxinv = np.linalg.inv(xtx)
+
+    sumY = np.sum(data[Y])
+    sumXY = np.sum(data[X]*data[Y])
+    xty = [sumY, sumXY]
+    b = np.matmul(xtxinv,xty)
+    
+    #SSE
+    ynew = []
+    for i in data[X]:
+        yval = b[0] + b[1]*i
+        ynew.append(yval)     
+    sse = 0
+    k = 0
+    for i in data[Y]:
+        erval = i-ynew[k]
+        sse+=erval*erval
+        k+=1
+        
+    #SST
+    mean = np.mean(data[Y])
+    sst = 0
+    for i in data[Y]:
+        erval = i-mean
+        sst+=erval*erval
+        
+    ssr = sst - sse        
+    r2 = ssr/sst  
+    vif = 1/(1-r2)
+    print(r2)
+    print(vif)
+    
+    
+def corrCheck(X,Y):
+    n = len(data[X])
+    xbar = np.mean(data[X])
+    ybar = np.mean(data[Y])   
+    
+    sums = 0
+    for i in range(0,n):
+        sums+= ((data[X][i]-xbar)*(data[Y][i]-ybar))   
+    cov = sums/(n-1)
+    
+
+    corrxy = cov/(np.std(data[X])*np.std(data[Y]))
+    print(corrxy)
+        
+    
+X = 'bathrooms'
+Y = 'yr_renovated'
+corrCheck(X,Y)
+---------------------------
+POLY
+
+#polynomial Regression
+import pandas as pd
+import numpy as np
+import sys
+
+df = pd.read_csv('iris.csv')
+
+def calcB(X, Y, degree):
+    xmat = []
+    for i in range(degree+1):
+        lis = []
+        for j in X:
+            if i==0:
+                lis.append(1)
+            else:
+                lis.append(j**i)
+        xmat.append(lis)
+    xT = np.array(xmat)
+    y = np.array(Y)
+    x = xT.transpose()
+    xTx = np.dot(xT, x)
+    xTxI = np.linalg.inv(xTx)
+    xTy = np.dot(xT, y)
+    B = np.dot(xTxI, xTy)
+    
+    return B
+
+def calcMetrics(B, X, Y):
+    result = []
+    Ymean = np.mean(np.array(Y))
+    
+    SSE, SSR, SST = 0, 0, 0
+    
+    for j in range(len(X)):
+        Yhat = 0
+        for i in range(len(B)):
+            if i==0:
+                Yhat += B[i]
+            else:
+                Yhat += B[i]*X[j]**i
+        SSE += (Yhat-Y[j])**2
+        SST += (Y[j]-Ymean)**2
+        SSR += (Yhat-Ymean)**2
+    result.append(SSE)
+    result.append(SSR)
+    result.append(SST)
+    result.append(SSR/SST)
+    result.append((SSR/SST)**0.5)
+    return result
+            
+def display(X, Y):
+    result = []
+    for i in range(1, 4):
+        B = calcB(X, Y, i)    
+        result.append(calcMetrics(B, X, Y))
+        print("\nDegree", i)
+        print("SSE: ", result[i-1][0])
+        print("SSR: ", result[i-1][1])
+        print("SST: ", result[i-1][2])
+        print("r^2: ", result[i-1][3])
+        print("r: ", result[i-1][4])
+    return result
+
+petalLength = df['petallength']
+petalWidth = df['petalwidth']
+sepalLength = df['sepallength']
+sepalWidth = df['sepalwidth']
+
+SSE = []
+degree = 2
+
+print("\nPetal Length Vs Petal Width")
+result = display(petalLength, petalWidth)
+SSE.append(result[degree-1][0])
+
+print("\nPetal Length Vs Sepal Length")
+result = display(petalLength, sepalLength)
+SSE.append(result[degree-1][0])
+
+print("\nPetal Length Vs Sepal Width")
+result = display(petalLength, sepalWidth)
+SSE.append(result[degree-1][0])
+
+print("\nSepal Length Vs Sepal Width")
+result = display(sepalLength, sepalWidth)
+SSE.append(result[degree-1][0])
+
+print("\nPetal Width Vs Sepal Width")
+result = display(petalWidth, sepalWidth)
+SSE.append(result[degree-1][0])
+
+print("\nPetal Width Vs Sepal Length")
+result = display(petalWidth, sepalLength)
+SSE.append(result[degree-1][0])
+
+print("\nMinimum SSE: ", min(SSE), SSE.index(min(SSE)))
+
+       

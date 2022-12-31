@@ -1,0 +1,11 @@
+DONE
+Redis 
+column database hbase
+neo4j
+spark
+data integration 
+schema matching mapping
+
+LEFT TO LEARN
+hadoop  mapreduce, 
+cassandra, 
