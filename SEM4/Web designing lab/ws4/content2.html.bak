@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+		body
+		{
+			background-color:plum;
+			text-align:right;
+		}
+            nav
+            {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+				display:block;
+				align-content :right;
+            }
+        </style>
+    </head>
+    <body><nav>
+	<ul>
+		<a href ="content1.html" target="content"> Overview </a>
+		<br>
+		<a href ="content2.html" target="_blank"> Results</a> <br>
+		<a href ="content3.html" target="_self"> Calender </a> <br>
+		<a href ="content1.html" target="content"> Coaches </a> <br>
+		<a href ="content2.html" target="content"> Camps </a> <br>
+		<a href ="content3.html" target="content"> Photos </a> <br>
+	</ul>
+	</nav>
+    </body>
+</html>

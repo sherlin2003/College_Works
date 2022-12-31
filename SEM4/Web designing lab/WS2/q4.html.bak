@@ -1,0 +1,32 @@
+<html>
+<body>
+<table border="3"  background="E:\SEM4\Web designing lab\WS2\img.jpg" width="300" height="200" cellspacing="5"  >
+<tr bgcolor="white">
+<th > <font color="orange">Roll No </font></th>
+<th> <font color="orange">Name </font></th>
+<th> <font color="orange">Team </font></th>
+</tr>
+<tr>
+<td><font color="brown"><b>1001</b></font></td>
+<td><font color="brown"><b>John</b></font></td>
+<td><font color="brown"><b>Red </b></font></td>
+</tr>
+<tr>
+<td><font color="brown"><b>1002</b></font></td>
+<td><font color="brown"><b>Peter</b></font></td>
+<td><font color="brown"><b>Blue</b></font></td>
+</tr>
+<tr>
+<td><font color="brown"><b>1003</b></font></td>
+<td><font color="brown"><b>Henry</b></font></td>
+<td><font color="brown"><b>Green</b> </font> </td>
+</tr>
+<tr>
+<td><font color="brown"><b>1004</b></font></td>
+<td><font color="brown"><b>Ford</b></font></td>
+<td><font color="brown"><b>Yellow </b></font></td>
+</tr>
+</table>
+</body>
+</html>
+

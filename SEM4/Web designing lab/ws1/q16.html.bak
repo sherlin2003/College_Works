@@ -1,0 +1,6 @@
+<html>
+<head> <title> q16 </title>
+<body>
+<p>My favorite color is <del><font color="red"> red </font> </del><font color="blue"> <ins> blue</ins>! </font> </p>
+</body>
+</html>

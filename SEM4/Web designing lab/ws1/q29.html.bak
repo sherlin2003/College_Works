@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" , initial-scale="4.0">
+    <title>Q29</title>;
+  </head>
+  <style>
+    img{
+      height: 100px;
+      width: 100%;
+    }
+
+    .center{
+      height: 200px;
+    }
+  </style>>
+  <body>
+  
+    <table>
+      <tr>
+        <td><img src="E:\Web designing lab/img1.jpg" alt = 1></td>
+        <td><img src ="E:\Web designing lab/img2.jpg" alt = 2></td>
+        <td><img src = "E:\Web designing lab/img3.jpg"  alt = 3></td>
+        <td><img src = "E:\Web designing lab/img4.jpg" alt = 4></td>
+      </tr>
+      <tr>
+        <td><img src =  "E:\Web designing lab/img5.jpg"alt = 5></td>
+        <td rowspan = "2" colspan = "2"><img class = "center" src = "E:\Web designing lab/img13.jpg" alt = 13></td>
+        <td><img src = ' "E:\Web designing lab/img6.jpg"' alt = 6></td>
+      </tr>
+      <tr>
+        <td><img src =  "E:\Web designing lab/img7.jpg"alt = 7></td>
+        <td><img src =  "E:\Web designing lab/img8.jpg" alt = 8></td>
+      </tr>
+      <tr>
+        <td><img src =  "E:\Web designing lab/img9.jpg" alt = 9></td>
+        <td><img src =  "E:\Web designing lab/img10.jpg" alt = 10></td>
+        <td><img src =  "E:\Web designing lab/img11.jpg" alt = 11></td>
+        <td><img src =  "E:\Web designing lab/img12.jpg" alt = 12></td>
+      </tr>
+    </table>
+
+  </body>
+</html>  
+

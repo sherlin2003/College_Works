@@ -1,0 +1,62 @@
+<head>
+    
+</head>
+
+
+<body>
+    <table>
+        <tr>
+            <td rowspan="2"  bgcolor="brown">
+                <img src="images/logo.jpg" alt="logo" />
+                <h4 bgcolor="yellow">Middle Age Arts</h4>
+                <a href="#">HomePage</a><br>
+                <a href="#">View the Catlog</a><br>
+                <a href="#">Place an order</a><br>
+
+                <h4 color="yellow">About Gargoyles</h4>
+                <a href="#">Gargoyle Products</a><br>
+                <a href="#">Gargoyle Products</a><br>
+                <a href="#">(text version)</a><br>
+
+                <h4 color="yellow">Other Collections</h4>
+                <a href="#">The Vatican Collection</a><br>
+                <a href="#">The Rodin Collection</a><br>
+                <a href="#">Renaissance Masters</a><br>
+
+            </td>
+            <td colspan="2" style="height: 233px;">
+                <img height="100px" width="600px" src="images/banner.jpg" alt="banner" />
+            </td>
+        </tr>
+        <tr>
+            <td width="200px">
+                <h4 color="green" align="center">From the President</h4>
+                <img src="images/photo1.jpg" alt="photo"  />
+                <p>This month Middle Age Arts introduces the Gargoyle Collection. I'm really excited about this new set
+                    of classical figures.</p>
+                <p>
+                    The collection contains faithful reproductions of gargoyles from some of the famous cathedrals of
+                    Europe, including Notre Dame, Rheims and Warwick Castle. All reproductions are done to exacting and
+                    loving detail.</p>
+            </td>
+            <td bgcolor="#FFFF00" width="200px"  align="top">
+
+                <h4 bgcolor="brown" align="center">What can you do with a gargoyle?</h4>
+                <p bgcolor="brown">
+                    Don't think you need a gargoyle? Think again. Gargoyles are useful as:</p>
+                <ul bgcolor="brown">
+                    <li>Bird baths</li>
+                    <li>Wind chimes</li>
+                    <li>Pen holders</li>
+                    <li>Paperweights</li>
+                    <li>Bookends</li>
+
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

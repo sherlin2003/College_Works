@@ -1,0 +1,46 @@
+server
+import socket
+s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+s.bind(('localhost',9999))
+print("Server waiting")
+while True :
+   received = print("Client: " + s.recv(1024).decode('utf-8'))   #waiting to receive
+s.close()
+
+client
+import socket
+c=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+serverAddr=('localhost',9999)
+opt='y'
+while opt=='y' or opt=='Y':
+    data_c = input("Client: ")
+    c = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    c.sendto(bytes(data_c, 'utf-8'),serverAddr)    #send message
+    op=input("Do you want to continue: ")
+    opt=op
+
+c.close()
+
+
+q1
+server
+import socket
+s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+s.bind(('localhost',6000))
+file_name="op"
+data,address=s.recvfrom(1024)
+f=open(file_name,'wb')
+f.write(data)
+f.close()
+s.close()
+
+
+client
+import socket
+s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+file_name="swetha.txt"
+f=open(file_name,"r")
+data=f.read(1024)
+s.sendto(bytes(data,"utf-8"),('localhost',6000))
+s.close()
+f.close()

@@ -1,0 +1,20 @@
+<html>
+<head>
+<style>
+p
+{
+	text-transform:lowercase;
+	font-size:50px;
+}
+a
+{
+	text-decoration:none;
+	color: red;
+}
+
+</style>
+</head>
+<body>
+<p><a href="STYLE.html"> Cascading Style sheets </a></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<body bgcolor="pink">
+<p>
+<pre>
+Hello ,
+
+	I am Swetha Muralidharan ,
+
+		from Muscat , Oman .
+					
+				Gald to meet you ....
+
+</pre>
+<p>
+Using the pre element you can display text however you want with all the spaces and line breaks preserved.
+</p>
+</body>
+</html>

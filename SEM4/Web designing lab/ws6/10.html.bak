@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+h1
+{
+	color:white;
+	background-color:black;
+}
+h2
+{
+	color:blue;
+	background-color:yellow;
+}
+p
+{
+	color:green;
+}
+.imp_para
+{
+	background-color:red;
+	color:yellow;
+}
+body
+{
+	font-size:23px;
+}
+</style>
+</head>
+<body>
+<h1> Diary of a Wimpy Kid </h1>
+<h2> 01. Diary of a Wimpy Kid  </h2>
+<p> <font color="black"> It’s a new school year, and Greg Heffley finds himself thrust into middle school,
+ where undersized weaklings share the hallways with kids who are taller, meaner, and already shaving. 
+ The hazards of growing up before you’re ready are uniquely revealed through words and drawings as Greg 
+ records them in his diary.</font>
+</p>
+<p class="imp_para"> In book one of this debut series, Greg is happy to have Rowley, his sidekick, along for the ride. 
+But when Rowley’s star starts to rise, Greg tries to use his best friend’s newfound popularity to his own advantage, 
+kicking off a chain of events that will test their friendship in hilarious fashion. </p>
+
+<h2> 02. Diary of a Wimpy Kid  - Rodrick Rules </h2>
+<p> Whatever you do, don’t ask Greg Heffley how he spent his summer vacation, because he definitely doesn’t want to talk 
+about it.As Greg enters the new school year, he’s eager to put the past three months behind him . . . and one event in
+ particular.Unfortunately for Greg,his older brother, Rodrick, knows all about the incident Greg wants to keep under wraps. 
+But secrets have a way of getting out . . . especially when a diary is involved.</p>
+<p class="imp_para"> Diary of a Wimpy Kid: Rodrick Rules chronicles Greg’s attempts to navigate the hazards of middle school, impress the girls, 
+steer clear of the school talent show, and most important, keep his secret safe.</p>
+</body>
+</html>

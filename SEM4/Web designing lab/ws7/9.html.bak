@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+.dropdown
+{
+	background-color:grey;
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+	font-size:20px;
+}
+
+.dropdown-content
+{
+	background-color:lightgrey;
+	min-width:150px;
+	position:absolute;
+	z-index:1;
+	display:none;
+	
+}
+.dropdown:hover.dropdown-content
+{
+	display:block;
+}
+</style>
+</head>
+<body>
+<div class="dropdown">
+	<h2> Menu </h2>
+	<div class="dropdown-content">
+	  <p>HOME</p>
+	  <p>NEWS</p>
+	  <p>ARTICLE</p>
+	  <p>BLOG</p>
+	  <p>CONTACT</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<html>
+<head>
+<style>
+	.title
+	{
+		background-color:skyblue;
+	}
+	h2
+	{
+		font-style:bold;
+	}
+	.button
+	{
+		background-color:blue;
+		color:white;
+	}
+	.end
+	{
+		background-color:skyblue;
+	}
+	
+</style>
+</head>
+<body>
+<form>
+<table>
+<div class="title">
+	<h2>Customer Feedback</h2>
+</div>
+<tr>
+<td rowspan="1" colspan="2"><p><pre>Thank you for choosing to send us your valuable 
+feedback.<br>
+You are encouraged to use the online feedback form 
+below to send us your valuable comments and 
+suggestions as well as any queries about our products
+and services that you may have.</pre></p></td>
+<td>
+	<label><b>How would you rate<br>our customer<br>support?*</b></label>
+</td>
+<td rowspan="3">
+	<input type="radio">
+	<label>Excellent</label><br>
+	<input type="radio">
+	<label >Good</label><br>
+	<input type="radio">
+	<label >Fair/Accurate</label><br>
+	<input type="radio">
+	<label >Poor</label><br>
+	<input type="radio">
+	<label>Terrible</label><br>
+</td>
+</tr>
+<tr>
+	<td><label><b>Customer Name*</label></td>
+	<td><input type="text"></td>
+</tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<tr>
+	<td><label ><b>Email Adresss*</label></td>
+	<td><input type="text"></td>
+	<td><label ><b>How willing are you<br>to recommand our<br>company to others?</label></td>
+	<td rowspan="2">
+	<input type="radio">
+	<label>Very Willing</label><br>
+	<input type="radio">
+	<label>Willing</label><br>
+	<input type="radio">
+	<label>Neutral</label><br>
+	<input type="radio">
+	<label>Unwilling</label><br>
+	<input type="radio">
+	<label> Very Unwilling</label><br>
+</td>
+</tr>
+<tr>
+	<td rowspan="2"><label><b>Organization</label></td>
+	<td><input type="text"></td>
+</tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<tr>
+	<td><label><b>How would you<br>rate your opinion<br>of our company?</label></td>
+	<td>
+	<input type="radio">
+	<label>Very High</label><br>
+	<input type="radio">
+	<label>High</label><br>
+	<input type="radio">
+	<label>Neutral</label><br>
+	<input type="radio">
+	<label>Low</label><br>
+	<input type="radio">
+	<label>Very Low</label><br>
+	</td>
+<td>
+<label><b>Are there any<br>products or services<br>we don't currently<br>carry that you would<br>like to see?</b></label>
+<td><textarea rows="5" cols="20"></textarea></td>	
+</td>
+</tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<tr>
+	<td ><label ><b>How reasonable<br>do you find our<br>costs/rates to<br>be?</label></td>
+	<td>
+	<input type="radio">
+	<label>Very Reasonable</label><br>
+	<input type="radio">
+	<label >Reasonable</label><br>
+	<input type="radio">
+	<label>Average</label><br>
+	<input type="radio">
+	<label>A Big High</label><br>
+	<input type="radio">
+	<label>Unreasonable</label><br>
+	</td>
+	<td>
+	<label><b>Do You have any<br>comments for us<br>(Good or Bad):</b></label>
+	<td><textarea rows="5" cols="20"></textarea></td>	
+	</td>
+</tr>
+</table>
+<div class="end">
+<table>
+	<tr>
+		<td><input type="submit" class="button"></td> 
+		<td><input type="reset"class="button" >	</td>
+	</tr>
+</table>
+</div>
+
+</form>
+</body>
+</html>

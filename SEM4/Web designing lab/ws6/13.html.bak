@@ -1,0 +1,15 @@
+<html>
+<head>
+<style>
+img
+{
+		width:640px;
+		height:480px;
+		align:center;
+}
+</style>
+</head>
+<body>
+<img src="lavender1.jpg">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<body>
+<h2> Distance Between two points </h2>
+
+<button onclick="Distance()"> Click here to Calculate Distance </button>
+<p id ="Distance"> </p>
+
+<script>
+function Distance()
+{
+	var x1 = prompt("Enter X1");
+	var x2 = prompt("Enter X2");
+	var y1 = prompt("Enter Y1");
+	var y2 = prompt("Enter Y2");
+	var first=x2-x1;
+	var second=y2-y1;
+	var Distance = (Math.sqrt(Math.pow(first,2))+(Math.pow(second,2)));
+	alert(document.getElementById("Distance").innerHTML="Distance between two points:" + Distance);
+	
+}
+</script>
+</body>
+</html>

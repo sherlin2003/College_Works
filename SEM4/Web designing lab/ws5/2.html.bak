@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>
+	mark
+	{
+		color:red;
+		background-color:yellow;
+	}
+</style>
+</head>
+<body>
+	<p> 
+	The Mission of steel city  Rowing is  to <mark> foster </mark> rowing for people of <mark> all ages </mark> .
+    Our Focus is for each <mark>individual</mark> to reach their <mark> maximum potenital </mark> by encouraging 
+    teamwork , dedication and hardwork. The goal for some people becomes national and 
+    international Competiton the olympics.
+	</p>
+</body>
+</html>

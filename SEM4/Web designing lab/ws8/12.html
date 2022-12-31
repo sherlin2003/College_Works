@@ -1,0 +1,25 @@
+<html>
+  <script>
+    var string = prompt("Enter string to search: ");
+    document.write("<h1>The string to search is:<br>"+string+"</h1>");
+    var substr = "";
+    function getVal()
+    {
+      substr = document.getElementById("input").value;
+    }
+    function queryRes()
+    {
+      document.getElementById("res1").value = string.indexOf(substr);
+      document.getElementById("res2").value = string.lastIndexOf(substr);
+      document.getElementById("res3").value = string.indexOf(substr, 12);
+      document.getElementById("res4").value = string.lastIndexOf(substr, 12);
+    }
+  </script>
+  <body>
+    <p>Enter substring to search for <input type="text" id="input" onblur="getVal()"> <button id="btn" onclick="queryRes()">Search</button></p>
+    <p>First occurence located at index <input type="text" id="res1"></p>
+    <p>Last occurence located at index <input type="text" id="res2"></p>
+    <p>First occurence from index 12 is located at index <input type="text" id="res3"></p>
+    <p>Last occurence from index 12 is located at index <input type="text" id="res4"></p>
+  </body>
+</html>

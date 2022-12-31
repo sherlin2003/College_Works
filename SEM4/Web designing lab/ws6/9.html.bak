@@ -1,0 +1,17 @@
+	
+<html>
+<head>
+<style>
+.greenMove
+{ 
+	color: green;
+	position: relative;
+	padding-top: 25px;
+	padding-left: 15px;
+}
+</style>
+</head>
+<body>
+<h1> Normal text <span class=greenMove> Text with class greenMove </span> </h1>
+</body>
+</html>

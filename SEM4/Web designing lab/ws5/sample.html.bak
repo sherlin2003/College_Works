@@ -1,0 +1,6 @@
+<html>
+<body>
+<canvas height="150" width="300" style="border:2px solid green;"> <p> Hello </p> </canvas>
+<canvas height="150" width="300" style="border:2px solid";> </canvas>
+</body>
+</html>

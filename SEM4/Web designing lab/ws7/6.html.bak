@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+
+header
+{
+	background-color:grey;
+	padding:15px;
+}
+h1
+{
+	font-size:30px;
+	font-family:arial;
+	font-style:bold;
+}
+.relative
+{
+	font-size:30px;
+	word-wrap: break-word;
+}
+
+.absolute1
+{
+	position:absolute;
+	top:160px;
+	right:100px;
+	width:30%;
+	background-color:grey;	
+	font-size:20px;
+}
+
+.absolute2
+{
+	position:absolute;
+	bottom:160px;
+	right:100px;
+	width:20%;
+	background-color:grey;
+	text-align:right;
+	
+}
+		
+</style>
+</head>
+<body>
+<fieldset>
+<header>
+<table>
+<tr>
+	<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGl13Hf2d2901yY245ylqZiBWge8ctFshSj6ERSV155rjeDob61omvX7RlQxZPanaMZp0&usqp=CAU" width="30%" height="20%"> 
+	<h1>  DEITEL  </h1> </td>
+</tr>
+</table>	
+</header>
+<div class="relative">Deitel & Associates , Inc is an
+ internationally recoganized corporate training and authoring organization specializing in programming languages ,
+ Internet / web technology iphone and android app development and object technology education . the company provides courses on Java , C++ , C# , Visual Basics,
+C , Internet and web programming , object Technology and iphone and Android app development. </p>
+</div>
+<div class="absolute1"> <p class="first"> Corporate Training <br>and Authoring </p> 
+</div>
+<hr>
+<div class="relative">
+<p> Through its publishing partnership with Pearson , Deital & AssociTED , Inc. publishers leading-edge programming textbooks , professional books and interactive web-based and DVD Live lessons video courses </p>
+</div>
+<div class="absolute2"> <p> Programming Books <br>and videos </p>
+</div>
+</fieldset>
+</body>
+</html>

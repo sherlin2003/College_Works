@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+.1
+{
+background-color: white;
+color:blue;
+}
+.2
+{
+background-color:yellow;
+color:red;
+}
+.3
+{
+background-color:red;
+color:yellow;
+}
+</style>
+</head>
+<body>
+<p class="1"> This is first paragraph. Bla, bla, bla, bla.</p>
+<p class="2"> This is second paragraph. Bla, bla, bla, bla.</p>
+<p class="3"> This is third paragraph. Bla, bla, bla, bla.</p>
+</body>
+</html>

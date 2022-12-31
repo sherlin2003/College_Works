@@ -1,0 +1,14 @@
+<html>
+    <style>
+        div{
+            display: flex;
+            height: 30%;
+        }
+    </style>
+    <body>
+        <div>
+			<iframe src = "griffendor.html" width="100%"></iframe>
+        </div>
+        <iframe src = "hufflepuff.html" height = "100%"></iframe>
+    </body>
+</html>

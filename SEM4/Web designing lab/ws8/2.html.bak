@@ -1,0 +1,26 @@
+<html>
+<body>
+<p id ="Cel"> </p>
+<p id ="Faren"> </p>
+
+<script>
+function celfun()
+{
+	var Cel = prompt("Enter Celsius "); 
+	var Faren = (Cel * 1.8) +32;
+	return (Faren);
+}
+document.getElementById("cel").innerHTML="CeltoFaren"+
+celfun();
+function funcel()
+{
+	var Faren = prompt("Enter Farenheit "); 
+	var Cel = (Faren-32) /1.8;
+	return(Cel);
+}
+document.getElementById("Faren").innerHTML="Farentocel"+
+funcel();
+
+</script>
+</body>
+</html>

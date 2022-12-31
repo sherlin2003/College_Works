@@ -1,0 +1,25 @@
+<html>
+  
+  <body>
+
+<img src="sports.jpg" usemap="#image-map" width="500" height="300">
+
+<map name="image-map">
+    <area target="_blank" alt="Dhoni" title="Dhoni" href="https://en.wikipedia.org/wiki/MS_Dhoni" coords="82,60,80,41,79,26,71,19,61,16,48,24,46,37,44,48,44,58,27,64,12,73,7,82,3,97,3,116,5,131,4,143,16,148,26,149,27,126,32,109,54,99,60,97,68,100,74,90,81,72,74,89,76,79,73,81,76,79" shape="poly">
+    <area target="_blank" alt="Patel" title="Patel" href="https://en.wikipedia.org/wiki/Munaf_Patel" coords="81,90,86,75,101,61,115,57,119,38,115,24,122,14,138,15,149,22,151,29,152,42,153,56,160,68,157,77,142,88,127,94,111,97,100,104,95,107,87,99" shape="poly">
+    <area target="_blank" alt="Sachin" title="Sachin" href="https://en.wikipedia.org/wiki/Sachin_Tendulkar" coords="149,105,150,93,167,82,181,83,186,51,205,44,189,37,197,37,214,41,214,50,215,60,216,75,223,79,234,86,241,95,241,101,240,109,233,120,229,127,210,115,197,114,183,120,175,124,161,129,151,123" shape="poly">
+    <area target="_blank" alt="Gambhir" title="Gambhir" href="https://en.wikipedia.org/wiki/Gautam_Gambhir" coords="217,66,227,64,245,65,251,68,253,54,256,43,265,30,280,30,285,60,286,69,287,49,285,39,289,75,298,80,301,91,311,109,311,126,302,126,286,108,271,99,255,94,246,92,224,78,235,80" shape="poly">
+    <area target="_blank" alt="Zaheer " title="Zaheer " href="https://en.wikipedia.org/wiki/Zaheer_Khan" coords="290,67,295,56,301,52,312,46,313,40,312,29,312,17,319,8,330,8,338,9,343,28,343,43,343,52,352,57,359,58,356,66,348,73,346,96,351,105,337,105,329,105,318,106,312,95,306,88,299,76" shape="poly">
+    <area target="_blank" alt="Yuvraj" title="Yuvraj" href="https://en.wikipedia.org/wiki/Yuvraj_Singh" coords="367,53,369,45,364,34,362,23,361,12,368,6,383,7,390,12,391,23,396,41,406,49,418,55,422,66,418,87,420,97,427,62,427,68,403,71,391,68,382,63,366,60,415,80,413,76,417,72,423,75,404,73" shape="poly">
+    <area target="_blank" alt="Ashwin" title="Ashwin" href="https://en.wikipedia.org/wiki/Ravichandran_Ashwin" coords="410,127,417,102,419,83,423,63,418,47,412,34,415,23,428,15,441,16,447,24,450,32,453,40,461,46,469,49,475,54,494,64,498,75,499,90,502,100,493,134,442,109,410,140,420,132,454,106,468,117" shape="poly">
+    <area target="_blank" alt="Nehra" title="Nehra" href="https://en.wikipedia.org/wiki/Ashish_Nehra" coords="508,173,507,88,505,57,510,45,520,39,523,30,512,28,508,14,508,8,536,1,521,0,547,8,550,23,557,32,573,39,580,44,578,61,577,84,582,99,580,115,579,130,581,139,580,171,576,190" shape="poly">
+    <area target="_blank" alt="Sreesanth" title="Sreesanth" href="https://en.wikipedia.org/wiki/S._Sreesanth" coords="0,175,13,167,25,160,35,143,34,127,37,111,61,106,72,104,49,102,83,113,86,124,82,137,75,151,69,165,60,176,67,176,80,167,86,178,88,190,86,196,80,204,69,225,60,236,45,240,24,242,16,239,10,238" shape="poly">
+    <area target="_blank" alt="Kohli" title="Kohli" href="https://en.wikipedia.org/wiki/Virat_Kohli" coords="83,159,101,138,93,159,111,131,115,110,127,105,138,105,145,112,149,123,148,142,148,150,145,157,144,167,140,175,134,189,134,225,133,238,128,242,95,238,86,239" shape="poly">
+    <area target="_blank" alt="Harbhajan" title="Harbhajan" href="https://en.wikipedia.org/wiki/Harbhajan_Singh" coords="140,207,141,186,143,170,154,150,169,144,179,148,189,130,203,119,214,137,216,146,216,157,220,167,221,181,229,188,225,205,223,234,162,244,149,228,147,222,209,238,171,240" shape="poly">
+    <area target="_blank" alt="Raina" title="Raina" href="https://en.wikipedia.org/wiki/Suresh_Raina" coords="243,211,239,180,243,165,257,158,259,122,262,108,249,127,254,142,269,108,280,112,280,120,281,148,305,181,307,206,316,237,290,233,236,228,251,230,275,236,303,169,282,215,262,221,250,222,263,228,271,229,266,240" shape="poly">
+    <area target="_blank" alt="Sehwag" title="Sehwag" href="https://en.wikipedia.org/wiki/Virender_Sehwag" coords="311,166,312,144,316,125,316,112,327,110,338,112,347,135,345,156,347,166,352,176,353,215,324,214" shape="poly">
+    <area target="_blank" alt="Chawla" title="Chawla" href="https://en.wikipedia.org/wiki/Piyush_Chawla" coords="358,203,358,191,363,182,361,169,353,153,355,146,365,136,371,135,386,140,389,151,389,166,391,180,405,189,409,194,400,208,384,214,373,221" shape="poly">
+    <area target="_blank" alt="Yusuf" title="Yusuf" href="https://en.wikipedia.org/wiki/Yusuf_Pathan" coords="407,193,419,171,429,166,439,146,432,128,446,120,465,124,465,141,469,148,470,174,484,169,499,178,499,189,505,196,509,202,513,213,520,232,505,241,428,235" shape="poly">
+</map>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<style>
+	.title
+	{
+		background-color:skyblue;
+		text-align:center;
+	}
+	h1
+	{
+		font-family:arial;
+		color:white;
+	}
+	.end
+	{
+		background-color:skyblue;
+		color:white;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="title">
+		<h1> RECIPE </h1>
+	</div>
+	<form>
+	<table align="center" colspan="4">
+	<tr> 
+		<td colspan="1"></td>
+		<td> <label> Recipe No. </label> </td>
+		<td> <label> Recipe Name : </label> </td>
+	</tr>
+	<tr>
+		<td colspan="1"></td>
+		<td> <input type="text"> </td> 
+		<td> <input type ="text" > </td>
+	</tr>
+	<tr>
+		<td colspan="3"> </td>
+		<td> <label> By : </label> <input type ="text"> </td>
+	</tr>
+	<tr> 
+		<td> <label> Dish type : </label> </td>
+		<td> <input type="radio"> <label> Veg </label> 
+		<br>
+		<input type="radio"> <label> Non-Veg </label>
+		<br>		
+		<input type="radio"> <label> Beverage </label>
+		<br>
+		<input type="radio"> <label> Salads </label>
+		<br>
+		<input type="radio"> <label> Desserts </label>
+		<br>
+		</td>		
+	</tr>
+	<tr> 
+		<td> <label> No of servings </label></td>
+		<td> <input type="text" placeholder="Ex:2- 4 "> </td>
+	</tr>
+	<tr>
+		<td colspan="2"> </td>
+		<td> <label> Difficulty level  :</label></td>
+		<td> <input type="checkbox"> <label> Easy </label> <br>
+		 <input type="checkbox"> <label> Medium </label> <br>
+		 <input type="checkbox"> <label> Hard </label> </td>
+	<tr> 
+		<td> <label> Preparation time :</label></td>
+		<td> <input type="text" placeholder="Ex:20-40 min "> </td>
+	</tr>
+	<tr> 
+		<td> <label> Ingrediants Used  :</label></td>
+		<td> <textarea rows="15" cols="20" > </textarea> </td>
+		<td> <label> Directions  :</label></td>
+		<td> <textarea rows="10" cols="50" > </textarea> </td>
+	</tr>
+	<tr>
+		<td> <label> Upload recipe image </label> </td>
+	</tr>
+	<tr>
+		<td colspan="1"> </td>
+		<td> <input type ="file" > </td>
+	</tr>
+</table>
+<div class="end" >
+<table align="center"> 
+	<tr> 
+		<td> <input type ="submit"> </td>
+		<td> <input type="reset"> </td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

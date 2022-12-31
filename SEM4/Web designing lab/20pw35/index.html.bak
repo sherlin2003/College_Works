@@ -1,0 +1,108 @@
+<html>
+<head>
+<style>
+div
+{
+	background-color:lightgrey;
+	display:flex;	
+}
+p
+{
+	font-size:25px;
+}
+.phone
+{
+	width:10%;
+}
+.truck
+{
+	width :5%;
+	height:5%;
+}
+</style>
+</head>
+<body>
+<div> 
+	<table>
+		<tr>
+			<td> <p> Bangalore </p>  </td>
+			<td> <p> <img src="phone.png" class="phone"> 080 33551000 </p> </td>
+			<td> <p>  <img src="van.png" class="truck"> Next delivery Tomorrow:7:00AM to 9.30AM</p>  </td>
+			<td> <p> Free delivery for orders Rs1000 and above </p></td> 
+			<td>  <p> Latest at BigBasket </p></td>
+			<td>  <p> Welcome Tanvi</p> </td>
+		</tr>
+	</table>
+</div>
+<hr style="height:1px ; background-color:green;">
+
+<div style="background-color:white; align:center; height:15%;">
+	<div style="background-color:white;"> <img src="bigbasket.jpg"> </div>
+	<div style="background-color:white; width:80%;"> <form action="">  <input type="text" placeholder="Search for more than 10,000 products..." name="search">
+			<button style="background-color:springgreen;"> Search </button> </form> </div>
+	<div>
+		<table style="height:15%;">
+		<tr> <td><img src="basket.png" style="width:12%;"> Your Basket  7 Itmes</td> </tr>
+		<tr> <td> <hr style="height:1px ; background-color:red;"> </td> </tr>
+		<tr> <td> Check out </td> </tr>
+		</table>
+	</div>	
+</div>
+<div style="background-color:cornsilk;">
+	<p> Would you like to <br> Shop from</p> 
+	<div style="background-color :black; margin:2% ; text-align:center;">
+		<p> <font color="springgreen">PREVIOUS ORDER </font> 
+		<br>
+		<font color="white"> TOTAL AMT SAVED 0.00 <img src="shopping.png" class="phone" style="color:white;">  </font> </p>
+	</div>
+	<div style="background-color :black; margin:2%; text-align:center;">
+		<p> <font color="white"> fast way to shop</font> 
+		<br>
+		<font color="springgreen"> SHOPPING LIST</font> <img src="choices.png" class="phone">  </p>
+	</div>
+	<div style="background-color :black;margin:2%;text-align:center;">
+		<p> <font color="white"> frequently based products </font> 
+		<br>
+		<font color="springgreen"> SMART BASKET </font> <img src="cart.png" class="phone"> </p> </td>
+	</div>
+</div>
+
+<div style="background-color:white; display:flex; width:100%;">
+	<table>
+	<tr> <td> <p style="background-color:limegreen;display:flex;"> SHOP </p></td> </tr>
+	<tr> <td> <p>Fruits and Vegetables</p></td> </tr>
+	<tr> <td> <p>Grocery and staples </p></td> </tr>
+	<tr> <td> <p>Bread and eggs</p></td> </tr>
+	<tr> <td> <p>Beverages</p></td> </tr>
+	<tr> <td> <p>Branded foods</p></td> </tr>
+	<tr> <td> <p>Households</p></td> </tr>
+	<tr> <td> <p>Importes</p></td> </tr>
+	<tr> <td> <p>Meat</p></td> </tr>
+	<tr> <td> <p><font color= "limegreen">  VIEW COMPLETE SHOP  </font> </p></td> </tr>	
+	</table>
+	<div style="background-color:white; height:10%; float:left; width:90%; border:5px outset grey;">
+				<p> <img src="discount.png" class="phone"> OFFERS </p>
+				<p> <img src="new.png" class="phone"> NEW ARRIVAL </p>
+				<p> <img src="heart.png" class="phone"> VALENTINE'S DAY OFFER </p>
+				<p> <img src="list.png" class="phone"> SHOP BY LIST </p>
+	</div>
+</div>
+
+<div style="display:flex; width:80%; position:absolute; left:18%; top:70%">
+	<p style=" text-align:center;"> <font color ="orange" > Fourtune Sunlight Sunflower oil <br> 
+	5 ltr , Pillsburry Chakki Fresh <br>
+	Atta 5 Kg & BB Royal Sugar 5 Kg </font> <br>
+	 <font color ="grey" > OUR PRICE </font>  <br>
+	<font color ="red" size="20%" >  Rs. 739/-  </font> <br>
+	 <font color="black"> Save Rs.301/- </font></p>
+
+	<div style="float:left;">
+		<img src="oil.jpg" style="width:20%; margin:2%;">
+		<img src="atta.jpg" style="width:20%; margin:2%;">
+		<img src="sugar.jpg" style="width:20%;margin:2%;"> 
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<body>
+<img src="indian_map.jpg" width="600" height="800" alt="indian_map" usemap="#indian_mapmap">
+<map name="indian_mapmap">
+  <area shape="poly" coords="156,666,184,694,198,787,185,766" alt="Kerala" a href="">
+  <area shape="poly" coords="187,693,262,645,249,761,201,792," alt="Tamilnadu" a href="">
+  <area shape="poly" coords="137,579,146,583,147,600,141,600" alt="Goa" a href="">
+  <area shape="poly" coords="150,583,205,511,217,660,155,670" alt="Karnataka" a href="">
+  <area shape="poly" coords="207,513,340,495,270,638,195,635" alt="Andra pradesh" a href="">
+  <area shape="poly" coords="125,463,262,428,260,500,140,580" alt="Maharastra" a href="">
+  <area shape="poly" coords="255,500,287,371,330,393,283,521" alt="chattisgarh" a href="">
+  <area shape="poly" coords="281,522,322,400,392,416,337,495" alt="Odisha" a href="">
+  <area shape="poly" coords="49,349,155,383,128,462,62,411" alt="Gujarat" a href="">
+  <area shape="poly" coords="172,338,298,350,254,424,162,415" alt="Madhay Pradesh" a href="">
+  <area shape="poly" coords="317,351,382,,345,366,397,334,400" alt="Jharkhand" a href="">
+  <area shape="poly" coords="365,379,400,348,410,403,378,405" alt="West bengal" a href="">
+  <area shape="poly" coords="80,274,146,198,214,290,155,377" alt="Rajasthan" a href="">
+  <area shape="poly" coords="212,264,215,210,317,283,307,339" alt="Uttra pradesh" a href="">
+  <area shape="poly" coords="320,338,334,288,391,298,371,332" alt="Bihar" a href="">
+  <area shape="poly" coords="187,247,169,208,203,197,204,250" alt="Haryana" a href="">
+  <area shape="poly" coords="220,192,242,174,268,196,255,224" alt="uttrakhand" a href="">
+  <area shape="poly" coords="154,193,175,151,193,184,180,200" alt="Punjab" a href="">
+  <area shape="poly" coords="185,142,210,127,230,157,210,177" alt="Himachal pradesh" a href="">
+  <area shape="poly" coords="173,120,148,22,247,52,239,125" alt="Jammu and kashmir" a href="">
+  <area shape="poly" coords="400,264,458,220,518,206,540,248" alt="Arunachal pradesh" a href="">
+  <area shape="poly" coords="430,295,430,281,517,245,476,336" alt="Assam" a href="">
+  </map>
+</body>
+</html>

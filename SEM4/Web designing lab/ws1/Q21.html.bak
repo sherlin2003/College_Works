@@ -1,0 +1,13 @@
+<html>
+<head>
+<title> Q21 </html>
+<body bgcolor="pink">
+<ul>
+<li> <a href = "https://www.google.co.in/"> <font color="red"> GOOGLE </font> </a> </li> <br>
+<li> <a href = "https://www.youtube.com/"> <font color="red"> YOUTUBE </font> </a> </li> <br>
+<li> <a href = "https://in.search.yahoo.com/?fr2=inr"> <font color="red"> YAHOO </font> </a> </li> <br>
+<li> <a href = "http://www.bing.com"> <font color="red"> BING </font> </a> </li><br>
+<li> <a href = "http://www.weather.com"> <font color="red"> TODAY WEATHER</font> </a> </li><br>
+</ul>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+	.hello
+	{
+		background-image: url("lavender1.jpg");
+
+	}
+	
+	.hi
+	{
+		background-image: url("lavender.jpg");
+	}
+	
+	.goodbye
+	{
+		background-image: url("lavender3.jpg");
+	}
+</style>
+</head>
+<body>
+<p class="hello"> hello </p>
+<p class="hi"> hello </p>
+<p class="goodbye"> hello </p>
+
+</body>
+</html>

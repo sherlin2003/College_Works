@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <style>
+                body
+                {
+                    background-color:skyblue;
+                }
+                h2
+                {
+                    text-align:center;
+                }
+        </style>
+    </head>
+    <body>
+        <h2> ABOUT ROGERS INDUSTRIES</h2>
+		<iframe src="2.1.html" width="20%" height="80%"> </iframe>
+		<iframe src="2.2.html" width="79%" height="80%"> </iframe>
+	</body>
+</html>

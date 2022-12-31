@@ -1,0 +1,18 @@
+<html>
+<style>
+	p
+	{
+		font-family:arial ;
+		font-size:50px;
+	}
+</style>
+<body>
+<table>
+	<tr>
+	<td><img src="hufflepuff.jpg"></td>
+	<td><p> 
+	<a href="https://harrypotter.fandom.com/wiki/Hufflepuff"> HUFFLEPUFF </a> </p></td>
+	</tr>
+</table>
+</body>
+</html>

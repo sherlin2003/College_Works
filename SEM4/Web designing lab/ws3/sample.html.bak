@@ -1,0 +1,60 @@
+<html>
+<title>Q6</title>
+<body>
+<form>
+<table colspan="2" bgcolor="lightgrey">
+<tr bgcolor="tomato">
+	<td colspan="2" align="center"><font size="5">Recipe</td>
+</tr>
+<tr>	
+	<td><b>Recipe Name</b></td>
+	<td><input type="text"></input></td>
+</tr>
+<tr>	
+	<td><b>Dish Type</b></td>
+	<td><select name="type">
+	<option>Please Select</option>
+	<option>123</option>
+	<option>456</option></td>
+</tr>
+<tr>	
+	<td><b>Preperation Time</b></td>
+	<td><input type="text" placeholder="Ex:20 mins"></input></td>
+</tr>
+<tr>	
+	<td><b>No of Servings</b></td>
+	<td><input type="text" placeholder="Ex:4"></input></td>
+</tr>
+<tr>	
+	<td><b>Shelf Life(Daily)</b></td>
+	<td><input type="text" placeholder="Ex:3"></input></td>
+</tr>
+<tr>	
+	<td><b>Difficuly</b></td>
+	<td><input type="radio"></input>
+	<label>Easy</label>
+	<input type="radio"></input>
+	<label>Moderate</label>
+	<input type="radio"></input>
+	<label>Hard</label></td>
+</tr>
+<tr>
+	<td><b>Ingredients</b></td>
+	<td><textarea rows="5" cols="20"></textarea></input></td>
+</tr>
+<tr>
+	<td><b>Directions</b></td>
+	<td><textarea rows="5" cols="20"></textarea></input></td>
+</tr>
+<tr>
+	<td><label><b>Select a file:</b></label></td>
+	<td><input type="file" id="myfile" name="myfile"></td>
+</tr>
+<tr bgcolor="tomato">
+	<td colspan="3"><center><input type="submit">
+	<input type="reset"></center></td>
+</tr>
+<table>
+</form>
+</body>
+</html>

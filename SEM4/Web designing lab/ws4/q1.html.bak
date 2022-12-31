@@ -1,0 +1,15 @@
+<html>
+<head>
+<style>
+	div{ display :flex ; height :100% }
+</style> 
+	<title> Steel City Rowing Club </title>
+</head>
+<body>
+        <iframe src="content1.html" height=25% width=100% title="Banner"> </iframe>
+        <div> 
+		<iframe src="content2.html" height="75%" width="20%" title="menu"></iframe>
+		<iframe src="content3.html" width="80%" height="75%" title="content"></iframe>
+		</div>
+    </body>
+</html>

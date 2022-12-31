@@ -1,0 +1,17 @@
+<html>
+<body>
+<img src="car_logo.jpg" width="400" height="200" alt="Car" usemap="#car_logomap">
+<map name="car_logomap">
+  <area shape="poly" coords="0,0,110,0,110,80,0,80" alt="Benz" a href="">
+  <area shape="poly" coords="112,0,186,23,187,85,104,85" alt="Toyota" a href="">
+  <area shape="poly" coords="200,0,260,0,260,85,190,90" alt="BMW" a href="">
+  <area shape="poly" coords="265,20,330,20,325,80,264,80" alt="Volkswagon" a href="">
+  <area shape="poly" coords="335,20,380,20,385,80,333,78" alt="Honda" a href="">
+  <area shape="poly" coords="15,100,100,100,100,150,20,145" alt="Nissan" a href="">
+  <area shape="poly" coords="115,100,180,90,180,155,112,155" alt="Porsche" a href="">
+  <area shape="poly" coords="185,100,250,100,250,140,185,140" alt="Ford" a href="">
+  <area shape="poly" coords="260,100,330,100,330,140,255,140" alt="Audi" a href="">
+  <area shape="poly" coords="340,100,400,100,400,138,335,140" alt="chevrolet" a href="">
+</map>
+</body>
+</html>

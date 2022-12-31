@@ -1,0 +1,20 @@
+<html>
+<h2>Arithmetic Operations</h2>
+<p> Click to do Arithmetics Calculations</p>
+<button onclick="calculations()">Arithmetic</button>
+<p id="calc"></p>
+<script>
+var a= parseInt(prompt("Enter a value :"));
+var b= parseInt(prompt("Enter a value :"));
+
+function calculations()
+{
+	var sum= a+b;
+	var diff=a-b;
+	var prod=a*b;
+	var quo=a/b;
+	document.getElementById("calc").innerHTML="The sum of two numbers is : "+sum +"<br>The difference of two numbers is : "+diff +	"<br>The product of two numbers is : "+prod +"<br>The quotient is : "+quo;
+}
+</script>
+</body>
+</html>

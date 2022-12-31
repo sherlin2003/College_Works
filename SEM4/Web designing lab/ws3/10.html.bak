@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+	h2
+	{
+		color: red;
+		font-family :arial;
+	}
+</style>
+<body bgcolor="lightblue">
+<h2> Bug report </h2>
+<hr>
+<table align="center">
+<tr>
+<td> <label> Bug title </label>
+
+
+
+
+</body>
+</html>

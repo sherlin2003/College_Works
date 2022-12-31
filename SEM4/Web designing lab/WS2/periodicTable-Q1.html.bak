@@ -1,0 +1,158 @@
+<html>
+<head>
+<title> periodic table </title>
+</head>
+<body>
+<table width = 1000>
+<tr>
+	<th colspan="18" bgcolor="yellow"><b> <font face="Arial Black" size="18"> The Periodic Table </font> </b> </th>
+</tr>
+<tr border="2">
+<td bgcolor="coral"> 1<br>H</td>
+<th colspan="16"> </th>
+<td bgcolor="aliceblue"> 2 <br> He </td>
+</tr>
+<tr>
+    <td bgcolor="violet">3<br> Li</td>
+	<td bgcolor="lightskyblue">4 <br> Be</td>
+	<td colspan='10'></td>
+	<td bgcolor="GoldenRod">5 <br> B</td>
+	<td bgcolor="coral">6 <br>C</td>
+	<td bgcolor="coral">7 <br> N</td>
+	<td bgcolor="coral">8 <br> O</td>
+	<td bgcolor="antiquewhite">9 <br> F</td>
+	<td bgcolor="aliceblue">10 <br> Ne</td>
+  </tr>
+  <tr>
+    <td bgcolor="violet">11 <br> Na</td>
+    <td bgcolor="lightskyblue">12 <br> Mg</td>
+	<td colspan='10'></td>
+	<td bgcolor="lightgreen">13<br> Al</td>
+	<td bgcolor="GoldenRod">14 <br> Si</td>
+	<td bgcolor="coral">15<br> P</td>
+	<td bgcolor="coral">16 <br> S</td>
+	<td bgcolor="antiquewhite">17 <br> Ci</td>
+	<td bgcolor="aliceblue">18 <br> Ar</td>
+  </tr>
+   <tr>
+    <td bgcolor="violet">19 <br> K</td>
+    <td bgcolor="lightskyblue">20 <br> Ca</td>
+	<td bgcolor="gold">21 <br> Sc</td>
+    <td bgcolor="gold">22 <br> Ti</td>
+	<td bgcolor="gold">23 <br> V</td>	
+	<td bgcolor="gold">24 <br> Cr</td>
+    <td bgcolor="gold">25 <br> Mn</td>
+	<td bgcolor="gold">26 <br> Fe</td>
+    <td bgcolor="gold">27 <br> Co</td>
+	<td bgcolor="gold">28 <br> Ni</td>
+    <td bgcolor="gold">29 <br> Cu</td>
+	<td bgcolor="gold">30 <br> Zn</td>
+	<td bgcolor="lightgreen"><font color="blue">31 <br>Ga</font></td>
+	<td bgcolor="GoldenRod">32<br>Ge</td>
+	<td bgcolor="GoldenRod">33 <br>As</td>
+	<td bgcolor="coral">34 <br>Se</td>
+	<td bgcolor="antiquewhite"><font color="blue">35 <br>Br</font></td>
+	<td bgcolor="aliceblue">36 <br>Kr</td>
+  </tr>
+   <tr>
+    <td bgcolor="violet">37<br>Rb</td>
+    <td bgcolor="lightskyblue">38<br>Sr</td>
+	<td bgcolor="gold">39<br>Y</td>
+    <td bgcolor="gold">40 <br> Zr</td>
+	<td bgcolor="gold">41 <br> Nb</td>	
+	<td bgcolor="gold">42 <br> Mo</td>
+    <td bgcolor="gold"><font color= "red" > 43 <br> Tc </font></td>
+    <td bgcolor="gold">44 <br> Ru</td>
+	<td bgcolor="gold">45 <br> Rh</td>
+    <td bgcolor="gold">46<br> Pd</td>
+	<td bgcolor="gold">47 <br> Ag</td>
+	<td bgcolor="gold">48<br>Cd</td>
+	<td bgcolor="lightgreen">49<br>In</td>
+	<td bgcolor="lightgreen">50<br>Sn</td>
+	<td bgcolor="GoldenRod">51<br>Sb</td>
+	<td bgcolor="GoldenRod">52<br>Te</td>
+	<td bgcolor="antiquewhite">53<br>I</td>
+	<td bgcolor="aliceblue">54<br>Xe</td>
+  </tr>
+   <tr>
+    <td bgcolor="violet"><font color="blue">55<br>Cs</font></td>
+    <td bgcolor="lightskyblue">56<br>Ba</td>
+	<td bgcolor="lavenderblush">57-71<br> </td>
+    <td bgcolor="gold">72 <br>Hf</td>
+	<td bgcolor="gold">73 <br>Ta</td>	
+	<td bgcolor="gold">74 <br>W</td>
+    <td bgcolor="gold">75 <br>Re</td>
+    <td bgcolor="gold">76 <br>Os</td>
+	<td bgcolor="gold">77 <br>Ir</td>
+    <td bgcolor="gold">78<br> Pt</td>
+	<td bgcolor="gold">79 <br>Au</td>
+	<td bgcolor="gold">80<br>Hg</td>
+	<td bgcolor="lightgreen">81<br>Ti</td>
+	<td bgcolor="lightgreen">82<br>Pg</td>
+	<td bgcolor="lightgreen">83<br>Bi</td>
+	<td bgcolor="GoldenRod">84<br>Po</td>
+	<td bgcolor="antiquewhite">85<br>At</td>
+	<td bgcolor="aliceblue">86<br>Rn</td>
+  </tr>
+   <tr>
+    <td bgcolor="violet"><font color="blue">87<br>Fr</font></td>
+    <td bgcolor="lightskyblue">88<br>Ra</td>
+	<td bgcolor="lavenderblush">89-103<br> </td>
+    <td bgcolor="gold"><font color="red">104 <br>Rf</font></td>
+	<td bgcolor="gold"><font color="red">105 <br>Db</font></td>	
+	<td bgcolor="gold"><font color="red">106<br>Sg</font></td>
+    <td bgcolor="gold"><font color="red">107 <br>Bh</font></td>
+    <td bgcolor="gold"><font color="red">108 <br>Hs</font></td>
+	<td bgcolor="gold"><font color="red">109 <br>Mt</font></td>
+    <td bgcolor="gold"><font color="red">110<br> Ds</font></td>
+	<td bgcolor="gold"><font color="red">111<br>Rg</font></td>
+	<td bgcolor="gold"><font color="red">112<br>Cn</font></td>
+	<td bgcolor="white"><font color="red">113<br>Nh</font></td>
+	<td bgcolor="white"><font color="red">114<br>Fl</font></td>
+	<td bgcolor="white"><font color="red">115<br>Mc</font></td>
+	<td bgcolor="white"><font color="red">116<br>Lv</font></td>
+	<td bgcolor="white"><font color="red">117<br>Ts</font></td>
+	<td bgcolor="white"><font color="red">118<br>Og</font></td>
+  </tr>
+  <tr>
+  <td colspan="2"> </td>
+  <td bgcolor="lavenderblush"> 57 <br> La </td>
+  <td bgcolor="lavenderblush"> 58 <br> Ce </td>
+  <td bgcolor="lavenderblush"> 59 <br> Pr </td>
+  <td bgcolor="lavenderblush"> 60 <br> Nd </td>
+  <td bgcolor="lavenderblush"><font color="red"> 61 <br> Pm </font></td>
+  <td bgcolor="lavenderblush"> 62 <br> Sm </td>
+  <td bgcolor="lavenderblush"> 63 <br> Eu </td>
+  <td bgcolor="lavenderblush"> 64 <br> Gd </td>
+  <td bgcolor="lavenderblush"> 65 <br> Tb </td>
+  <td bgcolor="lavenderblush"> 66 <br> Dy </td>
+  <td bgcolor="lavenderblush"> 67 <br> Ho </td>
+  <td bgcolor="lavenderblush"> 68 <br> Er </td>
+  <td bgcolor="lavenderblush"> 69 <br> Tm </td>
+  <td bgcolor="lavenderblush"> 70 <br> Yb </td>
+  <td bgcolor="lavenderblush"> 71 <br> Lu </td>
+  <td colspan="1"> </td>
+  </tr>
+
+  <tr>
+  <td colspan="2"> </td>
+  <td bgcolor="lavenderblush"> 89 <br> Ac</td>
+  <td bgcolor="lavenderblush">90 <br> Th </td>
+  <td bgcolor="lavenderblush">91 <br> Pa </td>
+  <td bgcolor="lavenderblush">92 <br> U</td>
+  <td bgcolor="lavenderblush"><font color="red"> 93 <br> Np </font></td>
+  <td bgcolor="lavenderblush"><font color="red"> 94 <br> Pu </font></td>
+  <td bgcolor="lavenderblush"><font color="red"> 95 <br> Am </font></td>
+  <td bgcolor="lavenderblush"> <font color="red">96 <br> Cm </font></td>
+  <td bgcolor="lavenderblush"><font color="red"> 97 <br> Bk </font></td>
+  <td bgcolor="lavenderblush"><font color="red"> 98 <br> Cf </font></td>
+  <td bgcolor="lavenderblush"> <font color="red">99 <br> Es </font></td>
+  <td bgcolor="lavenderblush"> <font color="red">100 <br> Fm</font></td>
+  <td bgcolor="lavenderblush"> <font color="red">101 <br> Md </font></td>
+  <td bgcolor="lavenderblush"> <font color="red">102 <br> No </font></td>
+  <td bgcolor="lavenderblush"><font color="red"> 103 <br> Lr </font></td>
+  <td colspan="1"> </td>
+  </tr>
+ 
+  </p>
+ </table>

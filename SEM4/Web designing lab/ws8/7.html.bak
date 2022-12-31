@@ -1,0 +1,19 @@
+<html>
+<h2>Q7.Write a JavaScript that takes three integers from the user and displays the sum, average, product, smallest and largest of the numbers in an alert dialog.</h2>
+<p> Click to do Calculations</p>
+<button onclick="cal()">Calculate</button>
+<p id="cal"></p>
+
+<script>
+    var a= parseInt(prompt("Enter a value :"))
+    var b= parseInt(prompt("Enter a value :"))
+    var c= parseInt(prompt("Enter a value :"))
+    avg=(a+b+c)/3;
+    alert(`Sum: ${a+b+c}`);
+    alert(`Average: ${avg}`);
+    alert(`Product: ${a*b*c}`);
+	alert(`Smallest: ${Math.min(a,b,c)}`);
+	alert(`Largest: ${Math.max(a,b,c)}`);
+
+</script>
+</html>

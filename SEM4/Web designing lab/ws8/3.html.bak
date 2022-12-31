@@ -1,0 +1,31 @@
+<html>
+<body>
+<h2> SI and CI Calculator </h2>
+<p> Click on SI to get answer</p>
+<button onclick="SI()"> Simple Interest </button>
+<p id ="SI"> </p>
+<br>
+
+<p> Click on CI to get answer</p>
+<button onclick="CI()"> Compound Interest </button>
+<p id ="CI"> </p>
+
+<script>
+var principal = prompt("Enter principal");
+var years = prompt("Enter No of years");
+var ROI = prompt("Enter Rate of Interest");
+function SI()
+{	
+	var SI = (principal*years*ROI )/100;
+	document.getElementById("SI").innerHTML="Simple Interest " + SI;
+}
+function CI(principal,years,ROI)
+{
+	var temp = 1+(ROI/100);
+	var CI = principal*(Math.pow(temp,years))-1;
+	document.getElementById("CI").innerHTML="Compound Interest " + CI;
+
+}
+</script>
+</body>
+</html>

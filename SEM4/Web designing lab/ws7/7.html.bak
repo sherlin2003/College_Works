@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+.first
+{
+	width:200px;
+	height:200px;
+	box-shadow:15px 15px 20px dimgrey;
+}
+.second
+{
+	width:200px;
+	height:200px;
+	box-shadow:-15px -15px 30px dimgrey;
+}
+.third
+{
+	width:200px;
+	height:200px;
+	box-shadow:15px 15px 10px dimgrey;
+}
+</style>
+</head>
+<body>
+<div class="first">
+</div>
+<hr>
+<br>
+<div class="second">
+</div>
+<br>
+<div class="third">
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1654247850 source:z:\4th-sem\os\sample.cpp\main.cpp
+	<stdio.h>
+	<stdlib.h>
+
+1654249185 source:z:\4th-sem\os\sample.cpp\covid_19.c
+	<stdio.h>
+	<unistd.h>
+	<stdlib.h>
+	<pthread.h>
+	<semaphore.h>
+
+1654250180 source:z:\4th-sem\os\sample.cpp\reporter.cpp
+	<iostream>
+	<stdlib.h>
+	<vector>
+	<map>
+	<pthread.h>
+	<semaphore.h>
+
+1654250639 source:z:\4th-sem\os\sample.cpp\sleeping.c
+	<pthread.h>
+	<time.h>
+	<unistd.h>
+	<semaphore.h>
+	<stdlib.h>
+	<stdio.h>
+

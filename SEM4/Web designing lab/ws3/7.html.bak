@@ -1,0 +1,103 @@
+<html>
+<head>
+<style>
+	h2
+	{
+		background-color: orange;
+	}
+	.end
+	{
+		background-color: orange;
+	}
+	button
+	{
+		color: white;
+		background-color:Black;
+	}
+</style>
+<body align="center">
+	<h2> Bio-Data </h2>
+	<form>
+	<table colspan="6">
+	<tr>
+		<td> <label> First name * </label> </td>
+		<td> <input type="text"> </td>
+		<td> <label> Middle name  </label> </td> <td> <input type="text"> </td>
+		<td> <label> Last name  * </label> </td> <td> <input type="text"> </td>
+	</tr>
+	</table>
+	<table colspan="4">
+	<tr> 
+		<td> <label> Date of birth : </label> </td>
+		<td> <label> mm </label> <textarea rows="1"cols="3"> </textarea> 
+		<label>  dd </label> <textarea rows="1" cols="3"> </textarea> 
+		<label>  yy </label> <textarea rows="1" cols="3"> </textarea> </td>
+		<td><label> SSN </label></td> <td><input type="text"> </td>				
+	</tr>
+	<tr> 
+		<td> <label> Occupation </label>  </td>
+		<td> <select>
+		<option> Select </option>
+		<option> Engineer </option>
+		<option> Doctor </option>
+		<option> Architecture </option>
+		</select> </td>
+		<td> <label> If other </label></td>
+		<td> <input type="text"> </td>
+	</tr>
+	<tr> 
+	<td> <label> Employer </label></td>
+	<td> <input type="text"> </td>
+	<td> <label> Race </label> </td>
+	<td> <select>
+		<option> Asian </option>
+		<option> x </option>
+		<option> y </option>
+		<option> z</option>
+		</select> 
+	</td>
+	</tr>
+	<tr>
+	<td> <label> Primary Language  </label></td>
+	<td> <input type="text"> </td>
+	<td> <label> Secondary language </label> </td>
+	<td> <input type="text"> </td>
+	</tr>
+	<tr>
+	<td> <label> Gender* </label>
+	<td> <select placeholder="select">
+		<option> F </option>
+		<option> M </option>
+		</select> 
+	</td>
+	<td> <label> Martial <br> Status </label>
+	<td> <select placeholder="select">
+		<option> X </option>
+		<option> Y </option>
+		</select> 
+	</td>
+	</tr>
+	<tr>
+	<td> <label> Height <br> (inches) </label></td>
+	<td> <input type="text"> </td>
+	<td> <label> Weight <br>(lbs) </label> </td>
+	<td> <input type="text"> </td>
+	</tr>
+	<tr>
+	<tr>
+	<td> <label> No.of children  </label></td>
+	<td> <input type="text"> </td>
+	</tr>
+	</table>
+	<div class="end">
+	<table align="center">
+		<tr>
+		<td> <button> Cancel </button> 
+			 <button> Next </button>
+			 <button> Done </button> </td>
+		</tr>	
+		</div>
+	</table>
+</form>
+</body> 
+</html>

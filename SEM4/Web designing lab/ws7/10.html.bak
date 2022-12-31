@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+.row 
+{
+	display: grid;
+	grid-template-columns: 300px 300px;
+	display:flex; 
+}
+.col1
+{	
+	padding:16px;
+	height: 250px;
+	font-size:20px;
+	background-color:blue;
+	color:white;
+}
+.col2
+{
+	padding:16px;
+	height: 250px;
+}
+
+</style>
+</head>
+<body>
+<header style="background-color:lightgrey; height:15%;font-size:50px;font-style:bold;">
+	<p> Two-column fixed layout </p>
+</header>
+<div class="row" >
+	<div class="col1">
+		<h2 style="font-style:25px;"> Menu </h2>
+		<p> This column is fixed <br>
+		This column is fixed <br>This column is fixed <br>This column is fixed <br>This column is fixed <br>This column is fixed <br>
+		</p>
+	</div>
+	<div class="col2">
+		<h2>Content</h2>
+		<p> This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed <br>
+		This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed <br>
+		This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed <br>
+		This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed <br>
+		This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed <br>
+		This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed This column is fixed <br>
+		</p>
+	</div>
+</div>
+<footer style="background-color:lightgrey; height:10%;font-size:30px;">
+	<p> footer </p>
+</footer>
+
+</body>
+</html>

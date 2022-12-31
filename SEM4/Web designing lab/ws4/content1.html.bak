@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <style>
+            h1
+            {
+                font-size: 50px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+			body
+			{
+			display : flex ;
+			justify-content : space-evenly;
+			}
+        </style>
+    </head>
+    <body>
+            <img src="logo.png" >
+            <h1> STEEL CITY <br> ROWING CLUB </h1>
+            <img src="boat.jpg" > 
+    </body>
+</html>

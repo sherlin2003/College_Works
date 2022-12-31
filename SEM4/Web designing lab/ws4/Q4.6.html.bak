@@ -1,0 +1,16 @@
+<html>
+    <style>
+        .box{
+            display: flex;
+            height: 30%;
+        }
+    </style>
+    <body>
+        <div class = "box">
+			<iframe src = "griffendor.html" width="20%"></iframe>
+            <iframe src = "slytherin.html" width = "80%"></iframe>
+        </div>
+        <iframe src = "hufflepuff.html" height = "50%" width = "100%"></iframe>
+        <iframe src = "ravenclaw.html" height = "20%" width = "100%"></iframe>
+    </body>
+</html>
