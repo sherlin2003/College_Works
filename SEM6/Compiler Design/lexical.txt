@@ -1,0 +1,866 @@
+#include <iostream>
+using namespace std;
+
+int fail( int s)
+{
+    if(s > 0 && s< 49)
+    {
+        return 50;
+    }
+
+    if(s > 50 && s< 52)
+    {
+        return 53;
+    }
+    if(s > 53 && s< 55)
+    {
+        return 56;
+    }
+    if(s > 56 && s< 62)
+    {
+        return 63;
+    }
+
+
+
+
+}
+int main()
+{
+
+    int state=0;
+    char a[50];
+    cin >> a;
+    int i =0;
+    while(1)
+    {
+        switch(state)
+        {
+        case 0 :
+            if(a[i]=='a')
+            {
+
+                state=1;
+                i++;
+            }
+            else if (a[i]=='t')
+            {
+                state=9;
+                i++;
+            }
+            else if (a[i]=='d')
+            {
+                state=21;
+                i++;
+            }
+            else if (a[i]=='c')
+            {
+                state=34;
+                i++;
+            }
+            else
+            {
+                state=fail(state);
+                i=0;
+            }
+                break;
+
+                case 1:
+                     if(a[i]=='s')
+                    {
+
+                        state=2;
+                        i++;
+                    }
+                    else if (a[i]=='u')
+                    {
+                        state=5;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 2:
+                    if(a[i]=='m')
+                    {
+
+                        state=3;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+                case 3:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 4;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 4:
+                    cout << "asm is the keyword"<<endl;
+                    return 0;
+
+                case 5:
+                    if(a[i]=='t')
+                    {
+
+                        state=6;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+                case 6:
+                    if(a[i]=='0')
+                    {
+
+                        state=7;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+                case 7:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 8;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 8:
+                    cout << "auto is the keyword"<<endl;
+                    return 0;
+
+                case 9:
+                    if(a[i]=='r')
+                    {
+
+                        state=10;
+                        i++;
+                    }
+                    else if (a[i]=='h')
+                    {
+                        state=16;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 10:
+                    if(a[i]=='y')
+                    {
+                        state=11;
+                        i++;
+                    }
+                    else if (a[i]=='u')
+                    {
+                        state=13;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+                case 11:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 12;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 12:
+                    cout << "try is the keyword"<<endl;
+                    return 0;
+
+                case 13:
+                    if(a[i]=='e')
+                    {
+
+                        state=14;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 14:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 15;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 15:
+                    cout << "true is the keyword"<<endl;
+                    return 0;
+
+                case 16:
+                    if(a[i]=='r')
+                    {
+
+                        state=17;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 17:
+                    if(a[i]=='0')
+                    {
+
+                        state=18;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 18:
+                    if(a[i]=='w')
+                    {
+
+                        state=19;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+                case 19:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 20;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 20:
+                    cout << "throw is the keyword"<<endl;
+                    return 0;
+
+                case 21:
+                    if(a[i]=='e')
+                    {
+
+                        state=22;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 22:
+                    if(a[i]=='l')
+                    {
+
+                        state=23;
+                        i++;
+                    }
+                    else if (a[i]=='f')
+                    {
+                        state=28;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+
+                case 23:
+                    if(a[i]=='e')
+                    {
+
+                        state=24;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 24:
+                    if(a[i]=='t')
+                    {
+
+                        state=25;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 25:
+                    if(a[i]=='e')
+                    {
+
+                        state=26;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 26:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 27;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 27:
+                    cout << " delete is the keyword"<<endl;
+                    return 0;
+
+                case 28:
+                    if(a[i]=='a')
+                    {
+
+                        state=29;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 29:
+                    if(a[i]=='u')
+                    {
+
+                        state=30;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 30:
+                    if(a[i]=='l')
+                    {
+
+                        state=31;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 31:
+                    if(a[i]=='t')
+                    {
+
+                        state=32;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 32:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 33;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 33:
+                    cout << " default is the keyword"<<endl;
+                    return 0;
+
+                case 34:
+                    if(a[i]=='a')
+                    {
+
+                        state=35;
+                        i++;
+                    }
+                    else if (a[i]=='o')
+                    {
+                        state=39;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 35:
+                    if(a[i]=='s')
+                    {
+
+                        state=36;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 36:
+                    if(a[i]=='e')
+                    {
+
+                        state=37;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 37:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 38;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 38:
+                    cout << " case is the keyword"<<endl;
+                    return 0;
+
+                case 39:
+                    if(a[i]=='n')
+                    {
+
+                        state=40;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 40:
+                    if(a[i]=='s')
+                    {
+
+                        state=41;
+                        i++;
+                    }
+                    else if (a[i]=='t')
+                    {
+                        state=44;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 41:
+                    if(a[i]=='t')
+                    {
+
+                        state=44;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 42:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 43;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 43:
+                    cout << " const is the keyword"<<endl;
+                    return 0;
+
+                case 44:
+                    if(a[i]=='i')
+                    {
+
+                        state=45;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 45:
+                    if(a[i]=='n')
+                    {
+
+                        state=46;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 46:
+                    if(a[i]=='u')
+                    {
+
+                        state=47;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 47:
+                    if(a[i]=='e')
+                    {
+
+                        state=48;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 48:
+                    if (a[i]==' ' || a[i]=='\0')
+                    {
+                        state = 49;
+                        i++;
+                    }
+                    else
+                    {
+                        state=fail(state);
+                        i=0;
+                    }
+                    break;
+
+                case 49:
+                    cout << " continue is the keyword"<<endl;
+                    return 0;
+
+                case 50:
+                    if (isalpha(a[i]) || a[i]=='_')
+                    {
+                        state = 51;
+                        i++;
+                    }
+                    else
+                    {
+                        state = fail(state);
+                        i = 0;
+                    }
+                    break;
+                case 51:
+                    if (isalpha(a[i]) || isdigit(a[i]) || a[i]=='_')
+                    {
+                        i++;
+                    }
+                    else if (a[i] == '\0')
+                    {
+                        state = 52;
+                        i++;
+                    }
+                    else
+                    {
+                        state = fail(state);
+                        i = 0;
+                    }
+                    break;
+                case 52:
+                    cout << "It is an identifier" << endl;
+                    return 0;
+
+                case 53:
+                    if (isdigit(a[i]))
+                    {
+                        state = 54;
+                        i++;
+                    }
+                    else
+                    {
+                        state = fail(state);
+                        i = 0;
+                    }
+                    break;
+                case 54:
+                    if (isdigit(a[i]))
+                    {
+                        i++;
+                    }
+                    else if (a[i] == '\0')
+                    {
+                        state = 55;
+                        i++;
+                    }
+                    else
+                    {
+                        state = fail(state);
+                        i = 0;
+                    }
+                    break;
+                case 55:
+                    cout << "It is a constant" << endl;
+                    return 0;
+
+                case 56:
+                    if (a[i] == '<')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '>')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '=')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '!')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '&')
+                    {
+                        state = 58;
+                        i++;
+                    }
+                    else if (a[i] == '|')
+                    {
+                        state = 59;
+                        i++;
+                    }
+                    else if (a[i] == '+')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '-')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '*')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '/')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else if (a[i] == '%')
+                    {
+                        state = 57;
+                        i++;
+                    }
+                    else
+                    {
+                        state = fail(state);
+                        i = 0;
+                    }
+                    break;
+            case 57:
+                if (a[i] == '\0')
+                {
+                    state = 61;
+                    i++;
+                }
+                else if (a[i] == '=')
+                {
+                    state = 60;
+                    i++;
+                }
+                else
+                {
+                    state = fail(state);
+                    i = 0;
+                }
+                break;
+            case 58:
+                if (a[i] == '&')
+                {
+                    state = 60;
+                    i++;
+                }
+                else if(a[i] == '\0')
+                {
+                    state = 61;
+                    i++;
+                }
+                else
+                {
+                    state = fail(state);
+                    i = 0;
+                }
+                break;
+
+            case 59:
+                if (a[i] == '|')
+                {
+                    state = 60;
+                    i++;
+                }
+                else if(a[i] == '\0')
+                {
+                    state = 61;
+                    i++;
+                }
+                else
+                {
+                    state = fail(state);
+                    i = 0;
+                }
+                break;
+
+            case 60:
+                if (a[i]=='\0')
+                {
+                    state = 61;
+                    i++;
+                }
+                else
+                {
+                    state = fail(state);
+                }
+                break;
+            case 61:
+                cout << "It is an operator" << endl;
+                return 0;
+            case 62:
+                cout << "It is not a token" << endl;
+                return 0;
+        }
+    }
+}
+
