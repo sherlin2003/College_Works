@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Material  Light</string>
+    <string name="last_name">Last Name :</string>
+    <string name="first_name">First Name :</string>
+    <string name="visit_type">Visit Type</string>
+    <string name="bussiness">Bussiness</string>
+    <string name="social">Social</string>
+    <string name="b1">Bussiness</string>
+    <string name="social1">Social</string>
+    <string name="bussiness11">Bussiness</string>
+    <string name="social11">Social</string>
+    <string name="visit_type1">Visit Type :</string>
+    <string name="textview">TextView</string>
+    <string name="textview7">TextView</string>
+    <string name="textview12">TextView</string>
+    <string name="cancel">CANCEL</string>
+    <string name="con">CONTINUE</string>
+    <string name="contin">CONTINUE</string>
+    <string name="app">dropDownMenuExample</string>
+    <string name="h">TextView</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="text">TextView</string>
+
+
+</resources>
